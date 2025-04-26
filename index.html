@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>越洋嘉合 - 专业留学移民服务</title>
+    <title>越洋嘉合 - 专业留学移民服务 | Oceanlink Alliance</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -13,15 +13,16 @@
         <div class="max-w-7xl mx-auto px-4">
             <div class="flex justify-between items-center h-16">
                 <div class="flex items-center">
-                    <a href="#" class="text-3xl font-bold text-blue-600">越洋嘉合</a>
+                    <a href="#" class="text-3xl font-bold text-blue-600" data-lang="company-name">越洋嘉合</a>
                 </div>
                 <div class="hidden md:block">
                     <div class="ml-10 flex items-baseline space-x-4">
-                        <a href="#home" class="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md">首页</a>
-                        <a href="#about" class="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md">关于我们</a>
-                        <a href="#services" class="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md">服务项目</a>
-                        <a href="#success" class="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md">成功案例</a>
-                        <a href="#contact" class="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md">联系我们</a>
+                        <a href="#home" class="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md" data-lang="nav-home">首页</a>
+                        <a href="#about" class="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md" data-lang="nav-about">关于我们</a>
+                        <a href="#services" class="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md" data-lang="nav-services">服务项目</a>
+                        <a href="#success" class="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md" data-lang="nav-success">成功案例</a>
+                        <a href="#contact" class="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md" data-lang="nav-contact">联系我们</a>
+                        <button id="langSwitch" class="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md">EN</button>
                     </div>
                 </div>
             </div>
@@ -114,14 +115,14 @@
                 </div>
             </div>
             <div class="relative max-w-7xl mx-auto py-24 px-4 sm:py-32 sm:px-6 lg:px-8">
-                <h1 class="text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl">
+                <h1 class="text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl" data-lang="hero-title">
                     专业留学移民服务
                 </h1>
-                <p class="mt-6 text-xl text-white max-w-3xl">
+                <p class="mt-6 text-xl text-white max-w-3xl" data-lang="hero-subtitle">
                     我们致力于为每一位客户提供专业的留学移民服务，助您实现海外梦想。
                 </p>
                 <div class="mt-10">
-                    <a href="#contact" class="inline-block bg-white py-3 px-8 border border-transparent rounded-md text-base font-medium text-blue-600 hover:bg-gray-50">
+                    <a href="#contact" class="inline-block bg-white py-3 px-8 border border-transparent rounded-md text-base font-medium text-blue-600 hover:bg-gray-50" data-lang="hero-cta">
                         免费咨询
                     </a>
                 </div>
@@ -133,11 +134,11 @@
     <section id="about" class="py-20 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center">
-                <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">
+                <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl" data-lang="about-title">
                     关于我们
                 </h2>
-                <p class="mt-4 text-lg text-gray-500">
-                    越洋嘉合国际咨询有限公司成立于2024年，是一家专业的留学移民服务机构，拥有丰富的行业经验和成功案例。
+                <p class="mt-4 text-lg text-gray-500" data-lang="about-content">
+                    越洋嘉合国际咨询有限公司成立于2025年，是一家专业的留学移民服务机构，拥有丰富的行业经验和成功案例。
                 </p>
             </div>
             <div class="mt-20">
@@ -148,8 +149,8 @@
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
                             </svg>
                         </div>
-                        <h3 class="mt-6 text-lg font-medium text-gray-900">专业团队</h3>
-                        <p class="mt-2 text-base text-gray-500">
+                        <h3 class="mt-6 text-lg font-medium text-gray-900" data-lang="team-title">专业团队</h3>
+                        <p class="mt-2 text-base text-gray-500" data-lang="team-content">
                             我们拥有一支经验丰富的专业团队，包括留学顾问、移民律师和求职辅导专家。
                         </p>
                     </div>
@@ -159,8 +160,8 @@
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
                             </svg>
                         </div>
-                        <h3 class="mt-6 text-lg font-medium text-gray-900">成功案例</h3>
-                        <p class="mt-2 text-base text-gray-500">
+                        <h3 class="mt-6 text-lg font-medium text-gray-900" data-lang="success-title">成功案例</h3>
+                        <p class="mt-2 text-base text-gray-500" data-lang="success-content">
                             多年来，我们已成功帮助数千名客户实现留学移民梦想，成功率高达98%。
                         </p>
                     </div>
@@ -170,8 +171,8 @@
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
                             </svg>
                         </div>
-                        <h3 class="mt-6 text-lg font-medium text-gray-900">全程服务</h3>
-                        <p class="mt-2 text-base text-gray-500">
+                        <h3 class="mt-6 text-lg font-medium text-gray-900" data-lang="service-title">全程服务</h3>
+                        <p class="mt-2 text-base text-gray-500" data-lang="service-content">
                             从咨询、规划到申请、签证，我们提供一站式服务，让您无后顾之忧。
                         </p>
                     </div>
@@ -184,10 +185,10 @@
     <section id="services" class="py-20 bg-gray-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center">
-                <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">
+                <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl" data-lang="services-title">
                     服务项目
                 </h2>
-                <p class="mt-4 text-lg text-gray-500">
+                <p class="mt-4 text-lg text-gray-500" data-lang="services-subtitle">
                     为您提供全方位的留学移民服务
                 </p>
             </div>
@@ -195,24 +196,24 @@
                 <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
                     <div class="bg-white rounded-lg shadow-lg overflow-hidden">
                         <div class="px-6 py-8">
-                            <h3 class="text-xl font-semibold text-gray-900">留学服务</h3>
-                            <p class="mt-4 text-gray-500">
+                            <h3 class="text-xl font-semibold text-gray-900" data-lang="study-title">留学服务</h3>
+                            <p class="mt-4 text-gray-500" data-lang="study-content">
                                 专注于澳大利亚、新西兰、英国和香港地区的留学申请服务，包括学校选择、申请材料准备、签证办理等。我们与这些地区的知名院校保持长期合作关系，为您提供最专业的留学规划。
                             </p>
                         </div>
                     </div>
                     <div class="bg-white rounded-lg shadow-lg overflow-hidden">
                         <div class="px-6 py-8">
-                            <h3 class="text-xl font-semibold text-gray-900">移民服务</h3>
-                            <p class="mt-4 text-gray-500">
+                            <h3 class="text-xl font-semibold text-gray-900" data-lang="immigration-title">移民服务</h3>
+                            <p class="mt-4 text-gray-500" data-lang="immigration-content">
                                 我们特别专注于NIV国家创新签证项目，为具有创新能力和商业潜力的申请人提供专业指导。同时，我们也提供技术移民、投资移民、家庭团聚等多种移民方案，专业团队全程指导，助您实现移民梦想。
                             </p>
                         </div>
                     </div>
                     <div class="bg-white rounded-lg shadow-lg overflow-hidden">
                         <div class="px-6 py-8">
-                            <h3 class="text-xl font-semibold text-gray-900">留学生求职辅导</h3>
-                            <p class="mt-4 text-gray-500">
+                            <h3 class="text-xl font-semibold text-gray-900" data-lang="career-title">留学生求职辅导</h3>
+                            <p class="mt-4 text-gray-500" data-lang="career-content">
                                 为留学生提供专业的求职指导服务，包括简历优化、面试技巧培训、职业规划咨询等。我们与澳大利亚地区的知名企业保持良好合作关系，帮助您顺利开启海外职业生涯。
                             </p>
                         </div>
@@ -226,30 +227,30 @@
     <section id="success" class="py-20 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center">
-                <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">
+                <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl" data-lang="cases-title">
                     成功案例
                 </h2>
-                <p class="mt-4 text-lg text-gray-500">
+                <p class="mt-4 text-lg text-gray-500" data-lang="cases-subtitle">
                     我们的成功案例
                 </p>
             </div>
             <div class="mt-20">
                 <div class="grid grid-cols-1 gap-8 md:grid-cols-3">
                     <div class="bg-gray-50 rounded-lg p-6">
-                        <h3 class="text-lg font-medium text-gray-900">澳大利亚名校录取</h3>
-                        <p class="mt-2 text-gray-500">
+                        <h3 class="text-lg font-medium text-gray-900" data-lang="case1-title">澳大利亚名校录取</h3>
+                        <p class="mt-2 text-gray-500" data-lang="case1-content">
                             成功帮助王同学获得悉尼大学、墨尔本大学等澳洲顶尖名校的录取通知书。
                         </p>
                     </div>
                     <div class="bg-gray-50 rounded-lg p-6">
-                        <h3 class="text-lg font-medium text-gray-900">澳大利亚NIV签证</h3>
-                        <p class="mt-2 text-gray-500">
+                        <h3 class="text-lg font-medium text-gray-900" data-lang="case2-title">澳大利亚NIV签证</h3>
+                        <p class="mt-2 text-gray-500" data-lang="case2-content">
                             帮助齐先生成功获得澳大利亚NIV国家创新签证，实现移民梦想。
                         </p>
                     </div>
                     <div class="bg-gray-50 rounded-lg p-6">
-                        <h3 class="text-lg font-medium text-gray-900">澳大利亚就业</h3>
-                        <p class="mt-2 text-gray-500">
+                        <h3 class="text-lg font-medium text-gray-900" data-lang="case3-title">澳大利亚就业</h3>
+                        <p class="mt-2 text-gray-500" data-lang="case3-content">
                             协助李同学在墨尔本成功获得太阳能公司offer，开启职业发展新篇章。
                         </p>
                     </div>
@@ -262,46 +263,40 @@
     <section id="contact" class="py-20 bg-gray-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center">
-                <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">
+                <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl" data-lang="contact-title">
                     联系我们
                 </h2>
-                <p class="mt-4 text-lg text-gray-500">
+                <p class="mt-4 text-lg text-gray-500" data-lang="contact-subtitle">
                     随时为您提供专业咨询
                 </p>
             </div>
             <div class="mt-20">
                 <div class="grid grid-cols-1 gap-8 md:grid-cols-2">
                     <div class="bg-white rounded-lg shadow-lg p-6">
-                        <h3 class="text-lg font-medium text-gray-900">联系方式</h3>
+                        <h3 class="text-lg font-medium text-gray-900" data-lang="contact-info">联系方式</h3>
                         <div class="mt-4 space-y-4">
-                            <p class="flex items-center text-gray-500">
-                                <svg class="h-6 w-6 text-blue-600 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                                </svg>
-                                电话：+61 418482234
-                            </p>
                             <p class="flex items-center text-gray-500">
                                 <svg class="h-6 w-6 text-blue-600 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                                 </svg>
-                                邮箱：info@yueyangjiahe.com
+                                <span data-lang="email">邮箱</span>：info@yueyangjiahe.com
                             </p>
                             <p class="flex items-center text-gray-500">
                                 <svg class="h-6 w-6 text-blue-600 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                                 </svg>
-                                地址：152 Elizabeth St, Melbourne VIC 3000, Australia
+                                <span data-lang="address">地址</span>：152 Elizabeth St, Melbourne VIC 3000, Australia
                             </p>
                         </div>
                     </div>
                     <div class="bg-white rounded-lg shadow-lg p-6">
-                        <h3 class="text-lg font-medium text-gray-900">在线咨询</h3>
+                        <h3 class="text-lg font-medium text-gray-900" data-lang="online-consult">在线咨询</h3>
                         <div class="mt-4">
-                            <p class="text-gray-500 mb-4">扫描下方二维码，添加我们的微信公众号，获取专业留学移民咨询服务。</p>
+                            <p class="text-gray-500 mb-4" data-lang="qrcode-tip">扫描下方二维码，添加我们的微信公众号，获取专业留学移民咨询服务。</p>
                             <div class="bg-gray-50 p-4 rounded-lg inline-block">
                                 <img src="wechat-qr.jpg" alt="微信公众号二维码" class="w-40 h-40 rounded-lg shadow-md">
-                                <p class="mt-2 text-sm text-gray-600 text-center">扫码关注公众号</p>
+                                <p class="mt-2 text-sm text-gray-600 text-center" data-lang="scan-tip">扫码关注公众号</p>
                             </div>
                         </div>
                     </div>
@@ -315,23 +310,23 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <div>
-                    <h3 class="text-lg font-semibold mb-4">关于我们</h3>
-                    <p class="text-gray-400">
+                    <h3 class="text-lg font-semibold mb-4" data-lang="footer-about">关于我们</h3>
+                    <p class="text-gray-400" data-lang="footer-content">
                         越洋嘉合是一家专业的留学移民服务机构，致力于为客户提供最优质的服务。
                     </p>
                 </div>
                 <div>
-                    <h3 class="text-lg font-semibold mb-4">快速链接</h3>
+                    <h3 class="text-lg font-semibold mb-4" data-lang="footer-links">快速链接</h3>
                     <ul class="space-y-2">
-                        <li><a href="#home" class="text-gray-400 hover:text-white">首页</a></li>
-                        <li><a href="#about" class="text-gray-400 hover:text-white">关于我们</a></li>
-                        <li><a href="#services" class="text-gray-400 hover:text-white">服务项目</a></li>
-                        <li><a href="#success" class="text-gray-400 hover:text-white">成功案例</a></li>
-                        <li><a href="#contact" class="text-gray-400 hover:text-white">联系我们</a></li>
+                        <li><a href="#home" class="text-gray-400 hover:text-white" data-lang="nav-home">首页</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-white" data-lang="nav-about">关于我们</a></li>
+                        <li><a href="#services" class="text-gray-400 hover:text-white" data-lang="nav-services">服务项目</a></li>
+                        <li><a href="#success" class="text-gray-400 hover:text-white" data-lang="nav-success">成功案例</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-white" data-lang="nav-contact">联系我们</a></li>
                     </ul>
                 </div>
                 <div>
-                    <h3 class="text-lg font-semibold mb-4">关注我们</h3>
+                    <h3 class="text-lg font-semibold mb-4" data-lang="footer-follow">关注我们</h3>
                     <div class="flex space-x-4">
                         <a href="#" class="text-gray-400 hover:text-white">
                             <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
@@ -352,7 +347,7 @@
                 </div>
             </div>
             <div class="mt-8 border-t border-gray-700 pt-8 text-center">
-                <p class="text-gray-400">&copy; 2024 越洋嘉合. 保留所有权利.</p>
+                <p class="text-gray-400" data-lang="footer-copyright">&copy; 2024 越洋嘉合. 保留所有权利.</p>
             </div>
         </div>
     </footer>
@@ -425,6 +420,124 @@
             // 显示第一张
             showSlide(0);
         });
+    </script>
+
+    <!-- 语言切换脚本 -->
+    <script>
+        const translations = {
+            'zh': {
+                'nav-home': '首页',
+                'nav-about': '关于我们',
+                'nav-services': '服务项目',
+                'nav-success': '成功案例',
+                'nav-contact': '联系我们',
+                'hero-title': '专业留学移民服务',
+                'hero-subtitle': '我们致力于为每一位客户提供专业的留学移民服务，助您实现海外梦想。',
+                'hero-cta': '免费咨询',
+                'about-title': '关于我们',
+                'about-content': '越洋嘉合国际咨询有限公司成立于2025年，是一家专业的留学移民服务机构，拥有丰富的行业经验和成功案例。',
+                'team-title': '专业团队',
+                'team-content': '我们拥有一支经验丰富的专业团队，包括留学顾问、移民律师和求职辅导专家。',
+                'success-title': '成功案例',
+                'success-content': '多年来，我们已成功帮助数千名客户实现留学移民梦想，成功率高达98%。',
+                'service-title': '全程服务',
+                'service-content': '从咨询、规划到申请、签证，我们提供一站式服务，让您无后顾之忧。',
+                'services-title': '服务项目',
+                'services-subtitle': '为您提供全方位的留学移民服务',
+                'study-title': '留学服务',
+                'study-content': '专注于澳大利亚、新西兰、英国和香港地区的留学申请服务，包括学校选择、申请材料准备、签证办理等。我们与这些地区的知名院校保持长期合作关系，为您提供最专业的留学规划。',
+                'immigration-title': '移民服务',
+                'immigration-content': '我们特别专注于NIV国家创新签证项目，为具有创新能力和商业潜力的申请人提供专业指导。同时，我们也提供技术移民、投资移民、家庭团聚等多种移民方案，专业团队全程指导，助您实现移民梦想。',
+                'career-title': '留学生求职辅导',
+                'career-content': '为留学生提供专业的求职指导服务，包括简历优化、面试技巧培训、职业规划咨询等。我们与澳大利亚地区的知名企业保持良好合作关系，帮助您顺利开启海外职业生涯。',
+                'cases-title': '成功案例',
+                'cases-subtitle': '我们的成功案例',
+                'case1-title': '澳大利亚名校录取',
+                'case1-content': '成功帮助王同学获得悉尼大学、墨尔本大学等澳洲顶尖名校的录取通知书。',
+                'case2-title': '澳大利亚NIV签证',
+                'case2-content': '帮助齐先生成功获得澳大利亚NIV国家创新签证，实现移民梦想。',
+                'case3-title': '澳大利亚就业',
+                'case3-content': '协助李同学在墨尔本成功获得太阳能公司offer，开启职业发展新篇章。',
+                'contact-title': '联系我们',
+                'contact-subtitle': '随时为您提供专业咨询',
+                'contact-info': '联系方式',
+                'email': '邮箱',
+                'address': '地址',
+                'online-consult': '在线咨询',
+                'qrcode-tip': '扫描下方二维码，添加我们的微信公众号，获取专业留学移民咨询服务。',
+                'scan-tip': '扫码关注公众号',
+                'footer-about': '关于我们',
+                'footer-content': '越洋嘉合是一家专业的留学移民服务机构，致力于为客户提供最优质的服务。',
+                'footer-links': '快速链接',
+                'footer-follow': '关注我们',
+                'footer-copyright': '© 2024 越洋嘉合. 保留所有权利.',
+                'company-name': '越洋嘉合'
+            },
+            'en': {
+                'nav-home': 'Home',
+                'nav-about': 'About',
+                'nav-services': 'Services',
+                'nav-success': 'Success Cases',
+                'nav-contact': 'Contact',
+                'hero-title': 'Professional Study Abroad & Immigration Services',
+                'hero-subtitle': 'We are committed to providing professional study abroad and immigration services to help you achieve your overseas dreams.',
+                'hero-cta': 'Free Consultation',
+                'about-title': 'About Us',
+                'about-content': 'OCEANLINK ALLIANCE PTY LTD was established in 2025, specializing in study abroad and immigration services with rich industry experience and successful cases.',
+                'team-title': 'Professional Team',
+                'team-content': 'We have an experienced professional team, including study abroad consultants, immigration lawyers, and career guidance experts.',
+                'success-title': 'Success Cases',
+                'success-content': 'Over the years, we have successfully helped thousands of clients achieve their study abroad and immigration dreams, with a success rate of 98%.',
+                'service-title': 'Full Service',
+                'service-content': 'From consultation and planning to application and visa processing, we provide one-stop service to ensure your peace of mind.',
+                'services-title': 'Our Services',
+                'services-subtitle': 'Comprehensive Study Abroad & Immigration Services',
+                'study-title': 'Study Abroad Services',
+                'study-content': 'Specializing in study abroad applications for Australia, New Zealand, UK, and Hong Kong, including school selection, application materials preparation, and visa processing. We maintain long-term partnerships with prestigious institutions in these regions to provide you with the most professional study abroad planning.',
+                'immigration-title': 'Immigration Services',
+                'immigration-content': 'We focus on the NIV National Innovation Visa program, providing professional guidance for applicants with innovative capabilities and business potential. We also offer various immigration solutions including skilled migration, investment migration, and family reunion, with professional team guidance to help you achieve your immigration dreams.',
+                'career-title': 'Career Guidance',
+                'career-content': 'Providing professional career guidance services for international students, including resume optimization, interview skills training, and career planning consultation. We maintain good relationships with leading companies in Australia to help you successfully start your overseas career.',
+                'cases-title': 'Success Cases',
+                'cases-subtitle': 'Our Success Stories',
+                'case1-title': 'Australian University Admission',
+                'case1-content': 'Successfully helped Student Wang receive offers from top Australian universities including the University of Sydney and the University of Melbourne.',
+                'case2-title': 'Australian NIV Visa',
+                'case2-content': 'Helped Mr. Qi successfully obtain the Australian NIV National Innovation Visa, realizing his immigration dream.',
+                'case3-title': 'Australian Employment',
+                'case3-content': 'Assisted Student Li in successfully obtaining an offer from a solar energy company in Melbourne, opening a new chapter in career development.',
+                'contact-title': 'Contact Us',
+                'contact-subtitle': 'Professional Consultation Available',
+                'contact-info': 'Contact Information',
+                'email': 'Email',
+                'address': 'Address',
+                'online-consult': 'Online Consultation',
+                'qrcode-tip': 'Scan the QR code below to add our WeChat official account for professional study abroad and immigration consultation services.',
+                'scan-tip': 'Scan to Follow',
+                'footer-about': 'About Us',
+                'footer-content': 'Oceanlink Alliance is a professional study abroad and immigration service agency, dedicated to providing the best service to our clients.',
+                'footer-links': 'Quick Links',
+                'footer-follow': 'Follow Us',
+                'footer-copyright': '© 2024 Oceanlink Alliance. All rights reserved.',
+                'company-name': 'Oceanlink Alliance'
+            }
+        };
+
+        let currentLang = 'zh';
+
+        function switchLanguage() {
+            currentLang = currentLang === 'zh' ? 'en' : 'zh';
+            document.getElementById('langSwitch').textContent = currentLang === 'zh' ? 'EN' : '中文';
+            
+            document.querySelectorAll('[data-lang]').forEach(element => {
+                const key = element.getAttribute('data-lang');
+                if (translations[currentLang][key]) {
+                    element.textContent = translations[currentLang][key];
+                }
+            });
+        }
+
+        document.getElementById('langSwitch').addEventListener('click', switchLanguage);
     </script>
 </body>
 </html> 
