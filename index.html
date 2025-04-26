@@ -571,7 +571,10 @@
 
         function switchLanguage() {
             currentLang = currentLang === 'zh' ? 'en' : 'zh';
+            // 更新桌面端语言切换按钮
             document.getElementById('langSwitch').textContent = currentLang === 'zh' ? 'EN' : '中文';
+            // 更新移动端语言切换按钮
+            document.getElementById('langSwitchMobile').textContent = currentLang === 'zh' ? 'EN' : '中文';
             
             document.querySelectorAll('[data-lang]').forEach(element => {
                 const key = element.getAttribute('data-lang');
