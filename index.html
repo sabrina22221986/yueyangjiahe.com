@@ -15,6 +15,15 @@
                 <div class="flex items-center">
                     <a href="#" class="text-3xl font-bold text-blue-600" data-lang="company-name">越洋嘉合</a>
                 </div>
+                <!-- 移动端菜单按钮 -->
+                <div class="md:hidden">
+                    <button type="button" class="mobile-menu-button text-gray-700 hover:text-blue-600 focus:outline-none">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+                <!-- 桌面端导航菜单 -->
                 <div class="hidden md:block">
                     <div class="ml-10 flex items-baseline space-x-4">
                         <a href="#home" class="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md" data-lang="nav-home">首页</a>
@@ -24,6 +33,17 @@
                         <a href="#contact" class="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md" data-lang="nav-contact">联系我们</a>
                         <button id="langSwitch" class="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md">EN</button>
                     </div>
+                </div>
+            </div>
+            <!-- 移动端导航菜单 -->
+            <div class="mobile-menu hidden md:hidden">
+                <div class="px-2 pt-2 pb-3 space-y-1">
+                    <a href="#home" class="block text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md" data-lang="nav-home">首页</a>
+                    <a href="#about" class="block text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md" data-lang="nav-about">关于我们</a>
+                    <a href="#services" class="block text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md" data-lang="nav-services">服务项目</a>
+                    <a href="#success" class="block text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md" data-lang="nav-success">成功案例</a>
+                    <a href="#contact" class="block text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md" data-lang="nav-contact">联系我们</a>
+                    <button id="langSwitchMobile" class="block w-full text-left text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md">EN</button>
                 </div>
             </div>
         </div>
@@ -558,6 +578,31 @@
         }
 
         document.getElementById('langSwitch').addEventListener('click', switchLanguage);
+
+        // 移动端菜单控制
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuButton = document.querySelector('.mobile-menu-button');
+            const mobileMenu = document.querySelector('.mobile-menu');
+            
+            mobileMenuButton.addEventListener('click', function() {
+                mobileMenu.classList.toggle('hidden');
+            });
+
+            // 点击菜单项后自动关闭菜单
+            const mobileMenuItems = mobileMenu.querySelectorAll('a');
+            mobileMenuItems.forEach(item => {
+                item.addEventListener('click', function() {
+                    mobileMenu.classList.add('hidden');
+                });
+            });
+
+            // 移动端语言切换
+            const langSwitchMobile = document.getElementById('langSwitchMobile');
+            langSwitchMobile.addEventListener('click', function() {
+                switchLanguage();
+                mobileMenu.classList.add('hidden');
+            });
+        });
     </script>
 </body>
 </html> 
